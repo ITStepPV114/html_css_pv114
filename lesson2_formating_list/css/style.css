@@ -1,0 +1,71 @@
+.list__ordered {
+    
+    color:blue;
+    border: 1px solid black;
+    background-color: lightgreen;
+    /* positiion */
+    /* list-style-position: inside;
+    list-style-type: lower-alpha; */
+    list-style: lower-alpha inside;
+}
+/* непарні child li in tag ol */
+.list__ordered-item:nth-child(odd) {
+    color:green;
+    font-weight: 900;
+    background-color: lightblue;
+}
+
+
+/* using selector  class */
+.list__unordered {
+    color: blue;
+    list-style: none;
+    /* 1 variant add icon marker */
+    /* list-style-image: url(../images/autumn_16.png); */
+}
+/* using selector element */
+/* ul{
+    list-style-type:circle;
+    color: green;
+} */
+/* using psevdo element */
+/* ul>li::marker{
+    content: "\270E";
+    font-weight: 900;
+    color:red;
+} */
+
+/* 2 variant add icon marker */
+.list__unordered-item::before {
+    content: url(../images/autumn_16.png);
+    /* font-size: 30px; */
+}
+
+.list__unordered-item>span::after{
+    content: ' END ';
+    background-color: aqua;
+    color: brown;
+    font-style: italic;
+}
+
+
+.multiply__list li::marker{
+    font-weight: 900;
+    color:blue;
+}
+
+
+dl{
+    background-color: aquamarine;
+    padding: 20px;
+}
+dt{
+    background-color: brown;
+    padding: 10px;
+}
+dd{
+
+    background-color: coral;
+    padding: 5px
+    ;
+}
