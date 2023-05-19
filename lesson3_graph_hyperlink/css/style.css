@@ -6,13 +6,29 @@
 
 body{
     font-size: 18px;
+    width: 100vw;
+    height:100vh;
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat;    /* за замовчування */
+    
 }
+
+.wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
 .header{
-    width: 100%;
-    height: 80px;
+    background-image: url(../images/color.jpg);
+    background-size: 6%;
+    background-repeat: repeat-x;
+    /* background-position-y: center; */
+    /* width: 100%; */
+    /* height: 80px; */
+    height: 10vh;
     background-color: blue;
     color: white;
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 .logo{
@@ -45,13 +61,50 @@ nav{
   
 .header ul>li{
     display:inline-block;
-    height: 50px;
+    height: 40px;
     color:white;
     width: 24%;
     
 }
+.main{
+    /* height: 80vh; */
+     /* text-overflow:ellipsis; */
+    /* overflow: scroll; */
+    /* overflow-y: scroll; */
+    /* background-image: url(../images/computer-lab-7.png),
+                        url(../images/Computer-PC-PNG-Clipart.png);
+    background-repeat: no-repeat, no-repeat; */
 
+    /* background-position: 50% 50%;
+    background-position: center center; */
+    /* background-position: bottom right, bottom left;  */
+    /* background-size: 50%, 50%; */
+    /* top, bottom, left, right, center */
+    /* background-size: contain; */
+    /* background-clip: content-box; */
+    /* background-attachment: fixed; */
+    /* background: url(../images/computer-lab-7.png) no-repeat bottom center ; */
+    min-height: 80vh;
+}
 .footer{
     font-size: 1.5rem;
-    color:blue
+    color:white;
+    background-color: blue;
+    /* width: 100%; */
+    /* height: 10vh; */
+    height: 80px;
+}
+
+
+
+/* image style */
+
+img{
+    /* width: 300px; */
+    border: 6px double blue ;
+    /* border-radius: 50px; */
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 4px 6px green;
+
 }
