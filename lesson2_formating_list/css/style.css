@@ -69,3 +69,16 @@ dd{
     padding: 5px
     ;
 }
+
+
+
+
+.multiply__list{
+    font-size: 10px;
+}
+.multiply__list>.frontend ul{
+    font-size: 2em;
+}
+.multiply__list>.frontend>ul>li>.sort-teg{
+    font-size: 3em;
+}
