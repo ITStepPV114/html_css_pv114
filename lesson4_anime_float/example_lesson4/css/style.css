@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* @import url(reset.css); */
+.gallery{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.img{
+    width: 30%;
+
+}
+
+.img:nth-child(1){
+    filter: grayscale(50%);
+}
+
+.img:nth-child(2){
+    filter: blur(2px);
+}
+
+.row1{
+    transition: all 2s ease 0.2s ;
+
+}
+.img.row1:hover{
+    transform: rotate(360deg);
+}
+
+.img.row2:hover{
+    transform: scale(1.2);
+}
+
+.animation{
+
+    border: 2px solid black;
+}
+.animation__img{
+    width: 350px;
+    animation-name: my_anime1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes my_anime1{
+    from{
+        margin-left: 0%;
+        transform: scale(1.5);
+    }
+    to{
+        margin-left: 75%;
+    }
+}

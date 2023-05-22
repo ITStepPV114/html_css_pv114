@@ -51,11 +51,12 @@ h2:hover{
     border: 4px ridge rgb(30, 30, 30);
     border-bottom: transparent;
     padding-left: 50px;   
-    transition-property: background-color, border-left;
+    /* transition-property: background-color, border-left;
     transition-duration: 1s;
-    transition-timing-function: ease;
+    transition-timing-function: ease; */
     /* transition-delay: 0.5s */ ;   
-    transition: background-color 1s ease 0.2;
+    transition: all 4s ease 0.2;
+    background:  linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(179,5,120,1) 43%, rgb(81, 5, 26) 58%, rgba(179,5,120,1) 78%, rgba(0,212,255,1) 100%);
 }
  
 .left_menu-link i{
@@ -69,7 +70,9 @@ h2:hover{
 .left_menu-link:hover{
     color:rgb(146, 69, 63);
     border-left: 10px ridge rgb(146, 69, 63);
-    background-color: blue;
-    transform: scale(1.2);
+    /* background-color: blue; */
+    background:  linear-gradient(90deg, rgb(56, 56, 194) 0%, rgba(179,5,120,1) 43%, rgb(197, 37, 82) 58%, rgba(179,5,120,1) 78%, rgb(7, 105, 124) 100%);
+    /* transform: scale(1.2); */
     /* transform: scaleY(1.2); */
+    transition: all 2s cubic-bezier(0.0, 0.0, 1.0, 1.0);
 }
