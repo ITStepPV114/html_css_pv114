@@ -6,6 +6,7 @@
 
 body{
     font-size: 18px;
+    color:white;
     width: 100vw;
     height:100vh;
     background-image: url(../images/bg.jpg);
@@ -67,7 +68,7 @@ nav{
     
 }
 .main{
-    /* height: 80vh; */
+     /* height: 80vh; */
      /* text-overflow:ellipsis; */
     /* overflow: scroll; */
     /* overflow-y: scroll; */
