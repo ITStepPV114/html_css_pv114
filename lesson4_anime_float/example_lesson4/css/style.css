@@ -41,11 +41,13 @@
 }
 .animation__img{
     width: 350px;
-    animation-name: my_anime1;
+    /* animation-name: my_anime1;
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-direction: alternate;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
+    animation: my_anime2 5s linear  infinite alternate ;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 
@@ -57,5 +59,23 @@
     }
     to{
         margin-left: 75%;
+    }
+}
+
+
+@keyframes my_anime2{
+    0%{
+        margin-left: 0%;
+        transform: scale(1.1);
+    }
+    25%{
+        filter:brightness(0.5);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        margin-left: 75%;
+        transform: scale(2);
     }
 }
