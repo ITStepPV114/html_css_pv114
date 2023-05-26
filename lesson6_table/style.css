@@ -1,0 +1,58 @@
+body{
+    font-size: 1.2rem;
+}
+#table1{
+    /* зовнішні межі всієї таблиці */
+    border: 2px solid green;
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+    border-spacing: 10px;
+    background-color: aqua;
+    /*приховуємо порожню клітинку  */
+    empty-cells: hide;
+}
+#table1 caption{
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+}
+/* tr{
+    background-color: lightskyblue;
+} */
+#table1 th{
+    border: 2px solid red;
+    background-color: lightslategray;
+}
+
+#table1 td{
+    border: 2px solid blue;
+    background-color: lightskyblue;
+}
+
+#table1 .uniqe{
+    width: 40vw;
+    height: 20vh;
+    text-align: right ;
+    vertical-align: top; 
+    /* background-color: lightpink; */
+    /* background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/videoblocks-abstract-background-dot-circle-with-connection-for-futuristic-network-cyber_h2znh8ueef_thumbnail-180_01.jpg"); */
+    background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/videoblocks-abstract-background-dot-circle-with-connection-for-futuristic-network-cyber_h2znh8ueef_thumbnail-180_01.jpg);
+    color:white
+}
+
+/* ============= Style table 2 ===============*/
+
+#table2{
+ border-collapse: collapse;
+}
+
+#table2 caption{
+    text-align: right;
+    caption-side: bottom;
+}
+#table2 td{
+  border: 1px solid black;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}

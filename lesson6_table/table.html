@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        table{
+            width: 75vw;
+            margin: 0 auto;
+            border: 1px solid black;
+            border-spacing: 4px;
+            background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+        }
+
+        td{
+            border: 1px solid black;
+            border-spacing: 4px;
+            /* border-collapse: collapse; */
+        }
+        /* tr:first-child{
+            height: 50px;
+        } */
+        .thead{
+            height: 50px;
+        }
+        th{
+            border: 1px solid red;
+        }
+        td{
+            text-align: center;
+            /* vertical-align: text-top; */
+            vertical-align:middle;
+            empty-cells: hide;
+        }
+        th:first-child{
+            width: 30%;
+        }
+        caption{
+            caption-side: top;
+            text-align: right;
+        }
+        .lightblue{
+            background-color: lightblue;
+            background-image: url(https://images.unsplash.com/photo-1544180119-7d88c3d0e171?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wyMTc3MjE4fHxlbnwwfHx8fHw%3D&w=1000&q=80);
+            background-size: 70%;
+        }
+        .lightgreen{
+            background-color: lightgreen;
+        }
+        tfoot>tr:last-child{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption> table 1</caption>
+        <thead>
+            <tr class="thead">
+                <th>column 1</th>
+                <th>column 2</th>
+                <th>column 3</th>
+                <th>column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="2">2</td>
+                <td>3</td>
+                <!-- <td>4</td> -->
+            </tr>
+            <tr>
+                <td rowspan="3" class="lightblue">5</td> 
+                <td>6</td>
+                <td colspan="2">7</td>
+                <!-- <td>8</td> -->
+            </tr>
+            <tr>
+                <!-- <td>9</td> -->
+                <td>10</td>
+                <td rowspan="2" colspan="2" class="lightgreen">11</td> <!-- full 11,12,16,17-->
+                <!-- <td>12</td> -->
+            </tr>
+            <tr>
+                <!-- <td>14</td> -->
+                <td>15</td>
+                <!-- <td>16</td> -->
+                <!-- <td>17</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>foot 1</td>
+            <td>foot 2</td>
+            <td>foot 3</td>
+            <td>foot 4</td>
+        </tfoot>
+    </table>
+</body>
+</html>
