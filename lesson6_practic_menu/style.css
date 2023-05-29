@@ -46,14 +46,24 @@ header{
     text-align: center;
     height: 100%;
     padding-top: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     /* border-right:0; */
+    margin-right: -5px;
     background-color: forestgreen;
+    pointer-events: none;
 
 }
+
+.menu-link:hover{
+      background-color:rgb(18, 94, 18) ;
+}
+
+
+
 .menu-item:hover .submenu{
     display: block;
 }
+
 
 .submenu{
     position: absolute;
@@ -66,6 +76,12 @@ header{
     height: 80px;
     position: relative;
  }
+/* 
+ .menu>.menu-item>.menu-link  .submenu>.menu-item:hover
+.submenu>.menu-item:hover .main-menu>.menu-item>.menu-link{
+{
+        background-color:rgb(18, 94, 18) ;
+}  */
 
  .submenu>.menu-item{
 
@@ -73,7 +89,32 @@ header{
 
  .submenu .menu-link{
     border-top: 0px;
+    pointer-events: auto;
 
  }
 
+/* ==========submenu 22======= */
+.submenu22{
+    position: absolute;
+    left: 102%;
+    top: 0px;
+    height: 80px;
+    z-index: 100;
+    display: none;
+}
+
+.submenu22 .menu-link:hover {
+    background-color:rgb(18, 94, 18) ;
+}
+
+/* .submenu22 .menu-item:hover .submenu .menu-link{
+    background-color:rgb(18, 94, 18);
+    /* pointer-events: auto;  */
+
+
+
+.submenu>.menu-item:nth-child(2):hover .submenu22{
+    display: block;
+  
+}
 
