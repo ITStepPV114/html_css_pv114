@@ -35,9 +35,12 @@ header{
    height: 100%;
    width: 150px;
    position: relative;
-   
-   
+   margin-right: -5px;
+   background-color:forestgreen;
+   cursor: pointer;
+   border: 1px solid black;
 }
+
 .menu-link{
     display: block;
     text-decoration: none;
@@ -46,21 +49,19 @@ header{
     text-align: center;
     height: 100%;
     padding-top: 20px;
-    border: 1px solid black;
+    
     /* border-right:0; */
-    margin-right: -5px;
-    background-color: forestgreen;
-    pointer-events: none;
+    /* margin-right: -5px; */
+    /* background-color: forestgreen; */
+    /* pointer-events: none; */
 
 }
 
-.menu-link:hover{
-      background-color:rgb(18, 94, 18) ;
+.menu>.menu-item:hover{
+    background-color: rgb(18, 94, 18);
 }
 
-
-
-.menu-item:hover .submenu{
+.menu>.menu-item:hover .submenu{
     display: block;
 }
 
@@ -69,52 +70,37 @@ header{
     position: absolute;
     width: 100%;
     display: none;
-    /* top:0; */
-    /* left:0; */
+
 }
 .submenu>.menu-item{
     height: 80px;
+    border-top: 0;
     position: relative;
  }
-/* 
- .menu>.menu-item>.menu-link  .submenu>.menu-item:hover
-.submenu>.menu-item:hover .main-menu>.menu-item>.menu-link{
-{
-        background-color:rgb(18, 94, 18) ;
-}  */
-
- .submenu>.menu-item{
-
- }
-
- .submenu .menu-link{
-    border-top: 0px;
-    pointer-events: auto;
-
- }
+ .submenu>.menu-item:hover{
+    background-color: rgb(18, 94, 18);
+}
 
 /* ==========submenu 22======= */
 .submenu22{
     position: absolute;
-    left: 102%;
+    left: 99%;
     top: 0px;
     height: 80px;
     z-index: 100;
     display: none;
 }
 
-.submenu22 .menu-link:hover {
-    background-color:rgb(18, 94, 18) ;
+.submenu22>.menu-item{
+    border-top: 0 ;
 }
 
-/* .submenu22 .menu-item:hover .submenu .menu-link{
-    background-color:rgb(18, 94, 18);
-    /* pointer-events: auto;  */
-
-
-
-.submenu>.menu-item:nth-child(2):hover .submenu22{
+.submenu>.menu-item:hover .submenu22{
     display: block;
-  
 }
+.submenu22>.menu-item:hover{
+    background-color: rgb(18, 94, 18);
+}
+
+
 
