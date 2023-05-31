@@ -102,5 +102,11 @@ header{
     background-color: rgb(18, 94, 18);
 }
 
+/* або */
+/* .submenu>.menu-item:has(.submenu22>.menu-item:hover) {
+    
+    background-color: red;
+}   */
 
 
+/* https://dirask.com/posts/CSS-add-style-to-the-parent-element-when-hovering-child-jQzl81 */
