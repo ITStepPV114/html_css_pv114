@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Srpite</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+  .registration{
+    width: 80vw;
+    /* display: flex;
+    flex-direction: column; */
+    background-color: lightseagreen;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+textarea{
+    resize: none;
+}
+
+input[type="image"]{
+    width: 100px;
+}
+
+input[type="radio"]:checked+span{
+    color:red;
+    /* border: 1px solid black; */
+
+}
+input[type="radio"]{
+    accent-color: red;
+}
+textarea::placeholder{
+    color:rgb(179, 6, 136);
+    font-size: large;
+}
+
+input:focus{
+    outline: 4px solid blue;
+        
+}
+input[type="radio"]:focus{
+    outline: 4px solid red;
+        
+}
+
+
+    </style>
+</head>
+
+<body>
+    <form class="registration" action="" method="GET">
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required tabindex="1" value="text" maxlength="10">
+        </div>
+        <div>
+            <label for="age">Number</label>
+            <input type="number" id="age" name="age" min="1" max="99" value="18" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="email@mail.com">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <fieldset class="refistration-options">
+            <legend>Options</legend>
+            <input type="checkbox" name="pidpiska" id="pidpiska" checked><span>chek1</span>
+            <input type="checkbox" name="pidpiska1" id="pidpiska1"><span>chek2</span>
+
+        </fieldset>
+
+        <fieldset class="registration-personalinfo">
+            <legend>Address</legend>
+            <select name="country" id="country" required>
+                <option value="1">Ukraine</option>
+                <option value="2">Italy</option>
+                <option value="3">Frace</option>
+                <option value="4">USA</option>
+            </select>
+        </fieldset>
+        <div>
+            <label for="userBirthday">Your birthday:  </label>
+            <input type="date" name="birthday" id="userBirthday">
+        </div>
+        <fieldset>
+            <legend>male_female</legend>
+            <!-- <label for="male_female">Male/amale:  </label> -->
+            <input type="radio" id="male" name="sex"  value="male" checked><span>male</span>
+            <input type="radio" id="female" name="sex" value="female"><span>female</span>
+        </fieldset>
+        <br>
+        <input type="image" name="photo" src="https://source.unsplash.com/random/?children" value="">
+        <textarea name="" id="" cols="30" rows="4" placeholder="add info..."></textarea>
+        <fieldset>
+            <input type="submit" value="registration">
+            <input type="reset" value="reset">
+            <input type="button" value="cancel">
+            <button>registration</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
