@@ -1,0 +1,63 @@
+$colorBG: rgb(228, 48, 165);
+$colorText: white;
+$colorBGForm: rgb(25, 105, 101);
+
+@mixin BGAndTextStyle($colorTextMixin:red){
+    background-color: $colorBG;
+    color:$colorTextMixin;
+    
+}
+
+.registration {
+    width: 80vw;
+    /* display: flex;
+    flex-direction: column; */
+    background-color: $colorBGForm;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+
+textarea {
+    resize: none;
+    background-color: $colorBG;
+}
+
+input[type="image"] {
+    width: 100px;
+}
+
+input[type="radio"]:checked+span {
+    color: $colorText;
+    /* border: 1px solid black; */
+
+}
+
+input[type="radio"] {
+    accent-color: red;
+}
+
+textarea::placeholder {
+    // color: rgb(179, 6, 136);
+    font-size: large;
+    @include BGAndTextStyle($colorTextMixin: $colorText);
+}
+
+input:focus {
+    outline: 4px solid blue;
+
+}
+
+input[type="radio"]:focus {
+    outline: 4px solid red;
+
+}
+
+input[type="text"]{
+    @include BGAndTextStyle;
+}
+
+input[type="email"]{
+    @include BGAndTextStyle($colorTextMixin:black);
+}

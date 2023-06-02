@@ -1,0 +1,52 @@
+.registration {
+  width: 80vw;
+  /* display: flex;
+  flex-direction: column; */
+  background-color: rgb(25, 105, 101);
+  padding: 20px;
+  margin: 0 auto;
+}
+
+textarea {
+  resize: none;
+  background-color: rgb(228, 48, 165);
+}
+
+input[type=image] {
+  width: 100px;
+}
+
+input[type=radio]:checked + span {
+  color: white;
+  /* border: 1px solid black; */
+}
+
+input[type=radio] {
+  accent-color: red;
+}
+
+textarea::placeholder {
+  font-size: large;
+  background-color: rgb(228, 48, 165);
+  color: white;
+}
+
+input:focus {
+  outline: 4px solid blue;
+}
+
+input[type=radio]:focus {
+  outline: 4px solid red;
+}
+
+input[type=text] {
+  background-color: rgb(228, 48, 165);
+  color: red;
+}
+
+input[type=email] {
+  background-color: rgb(228, 48, 165);
+  color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */
