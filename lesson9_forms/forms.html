@@ -8,47 +8,48 @@
     <title>Forms and Srpite</title>
     <link rel="stylesheet" href="./css/style.css">
     <style>
-  .registration{
-    width: 80vw;
-    /* display: flex;
+        .registration {
+            width: 80vw;
+            /* display: flex;
     flex-direction: column; */
-    background-color: lightseagreen;
-    padding: 20px;
-    margin: 0 auto;
-}
+            background-color: lightseagreen;
+            padding: 20px;
+            margin: 0 auto;
+        }
 
 
-textarea{
-    resize: none;
-}
+        textarea {
+            resize: none;
+        }
 
-input[type="image"]{
-    width: 100px;
-}
+        input[type="image"] {
+            width: 100px;
+        }
 
-input[type="radio"]:checked+span{
-    color:red;
-    /* border: 1px solid black; */
+        input[type="radio"]:checked+span {
+            color: red;
+            /* border: 1px solid black; */
 
-}
-input[type="radio"]{
-    accent-color: red;
-}
-textarea::placeholder{
-    color:rgb(179, 6, 136);
-    font-size: large;
-}
+        }
 
-input:focus{
-    outline: 4px solid blue;
-        
-}
-input[type="radio"]:focus{
-    outline: 4px solid red;
-        
-}
+        input[type="radio"] {
+            accent-color: red;
+        }
 
+        textarea::placeholder {
+            color: rgb(179, 6, 136);
+            font-size: large;
+        }
 
+        input:focus {
+            outline: 4px solid blue;
+
+        }
+
+        input[type="radio"]:focus {
+            outline: 4px solid red;
+
+        }
     </style>
 </head>
 
@@ -87,13 +88,13 @@ input[type="radio"]:focus{
             </select>
         </fieldset>
         <div>
-            <label for="userBirthday">Your birthday:  </label>
+            <label for="userBirthday">Your birthday: </label>
             <input type="date" name="birthday" id="userBirthday">
         </div>
         <fieldset>
             <legend>male_female</legend>
             <!-- <label for="male_female">Male/amale:  </label> -->
-            <input type="radio" id="male" name="sex"  value="male" checked><span>male</span>
+            <input type="radio" id="male" name="sex" value="male" checked><span>male</span>
             <input type="radio" id="female" name="sex" value="female"><span>female</span>
         </fieldset>
         <br>
